@@ -11,9 +11,12 @@ var msg = document.getElementById('message');
 // };
 
 for (var i = 0; i < mail.length; i++) {
-   if (mail[i] == userMail) {
+   if (mail[i] == userMail ) {
       msg.innerHTML = "WELCOME"
+      console.log(userMail);
+      break;
    } else {
       msg.innerHTML = "this mail doesn't exist"
+      console.log(userMail);
    }
 };
